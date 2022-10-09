@@ -1,0 +1,48 @@
+.navbar
+{
+    background-color:#df2222;
+}
+
+body{
+    background-color: black;
+}
+.navbar-brand
+{
+    font-size: 30px;
+    padding-bottom: 18px;
+}
+
+.nav-item
+{
+    padding-left: 25px;
+    font-family:Impact, fantasy;
+    font-size: 18px;
+}
+
+.fit
+{
+    position: relative;
+}
+.firsttxt
+{
+    position: absolute;
+    top: 440px;
+    left : 200px;
+    font-size: 15px;
+    color: #df2222;
+}
+.secondtxt
+{
+    position: absolute;
+    top: 460px;
+    left : 200px;
+    font-size: 40px;
+    color: white;
+    font-family:Impact, fantasy;
+}
+.pos
+{
+    position: absolute;
+    top:520px;
+    left:200px
+}
