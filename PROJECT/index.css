@@ -26,7 +26,7 @@ body{
 .firsttxt
 {
     position: absolute;
-    top: 440px;
+    top: 400px;
     left : 200px;
     font-size: 15px;
     color: #df2222;
@@ -34,7 +34,7 @@ body{
 .secondtxt
 {
     position: absolute;
-    top: 460px;
+    top: 430px;
     left : 200px;
     font-size: 40px;
     color: white;
@@ -43,6 +43,6 @@ body{
 .pos
 {
     position: absolute;
-    top:520px;
+    top:490px;
     left:200px
 }
