@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    div {
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+    }
+  </style>
+  <script src="app.js"></script>
+
+</head>
+
+<body>
+
+  
+
+  <form class="form-horizontal">
+    <div class="container">
+
+      <div class="form-group col-sm-5">
+        <h1>BMI</h1>
+      </div>
+
+      <div class="form-group col-sm-5">
+        <label for="exampleFormControlInput1">Age</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1">
+        <medium id="exampleFormControlInput1" class="form-text text-muted">Age between 18-50</medium>
+      </div>
+
+      <div class="form-group col-sm-5">
+        <label>Gender </label><label class="radio-inline"><input type="radio" name="optradio">Male</label>       
+        <label class="radio-inline"> <input type="radio" name="optradio">Female</label>
+      </div>
+
+      <div class="form-group col-sm-5">
+        <label for="Weight">Weight</label>
+        <input type="number" class="form-control" id="weight">
+        <medium id="exampleFormControlInput2" class="form-text text-muted">In Kgs</medium>
+      </div>
+      
+      <div class="form-group col-sm-5">
+        <label for="Height">Height</label>
+        <input type="number" class="form-control" id="height">
+        <medium id="exampleFormControlInput3" class="form-text text-muted">In Cms</medium>
+      </div>
+
+      <div class="form-group col-sm-5">
+        <button type="button" class="btn btn-outline-primary" id="btn">Calculate</button>
+        <form action="/action_page.php" method="get">
+          <button class="btn btn-outline-danger" type="reset" value="Reset">Clear</button>
+      </div>
+
+  </form>
+  </div>
+  </div>
+  </form>
+  <div id="result"></div>
+</body>
+
+</html>
