@@ -20,6 +20,23 @@
       display: inline-block;
       width: 150px;
     }
+
+    body {
+      background-image: url('limitless.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      backdrop-filter: blur(2px);
+    }
+    *
+    {
+      color: aliceblue;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 25px;
+    }
+    .or
+    {
+      color: orangered;
+    }
   </style>
   <script src="app.js"></script>
 
@@ -27,51 +44,52 @@
 
 <body>
 
-  
+
 
   <form class="form-horizontal">
     <div class="container">
 
       <div class="form-group col-sm-5">
-        <h1>BMI</h1>
+        <h1>BMI INDEX</h1>
       </div>
 
       <div class="form-group col-sm-5">
         <label for="exampleFormControlInput1">Age</label>
         <input type="number" class="form-control" id="exampleFormControlInput1">
-        <medium id="exampleFormControlInput1" class="form-text text-muted">Age between 18-50</medium>
+        <medium id="exampleFormControlInput1" class="or">Age between 18-50</medium>
       </div>
 
       <div class="form-group col-sm-5">
-        <label>Gender </label><label class="radio-inline"><input type="radio" name="optradio">Male</label>       
+        <label>Gender </label><label class="radio-inline"><input type="radio" name="optradio">Male</label>
         <label class="radio-inline"> <input type="radio" name="optradio">Female</label>
       </div>
 
       <div class="form-group col-sm-5">
         <label for="Height">Height</label>
         <input type="number" class="form-control" id="height">
-        <medium id="exampleFormControlInput3" class="form-text text-muted">In Cms</medium>
+        <medium id="exampleFormControlInput3" class="or">In Cms</medium>
       </div>
-      
+
       <div class="form-group col-sm-5">
         <label for="Weight">Weight</label>
         <input type="number" class="form-control" id="weight">
-        <medium id="exampleFormControlInput2" class="form-text text-muted">In Kgs</medium>
+        <medium id="exampleFormControlInput2" class="or">In Kgs</medium>
       </div>
-      
-      
+
+
 
       <div class="form-group col-sm-5">
-        <button type="button" class="btn btn-outline-primary" id="btn">Calculate</button>
+        <button type="button" class="btn btn-primary" id="btn">Calculate</button>
         <form action="/action_page.php" method="get">
-          <button class="btn btn-outline-danger" type="reset" value="Reset">Clear</button>
+          <button class="btn btn-danger" type="reset" value="Reset">Clear</button>
       </div>
 
+      <div id="result"></div>
   </form>
   </div>
   </div>
   </form>
-  <div id="result"></div>
+
 </body>
 
 </html>
